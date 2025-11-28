@@ -1,0 +1,14 @@
+{
+  "cartId": "cartID",
+  "userId": "E1891",
+  "items": [
+    {
+      "productId": "productId",
+      "name": "Laptop",
+      "quantity": 10,
+      "price": 50000
+    }
+  ],
+  "totalItems": 1,
+  "totalAmount": 500000
+}

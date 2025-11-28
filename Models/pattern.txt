@@ -1,0 +1,18 @@
+When user is getting called
+
+reads:-
+-reading based on mobile number - non read heavy
+-when doing delivery confirmation-based on customer Id will fetch user - read heavy
+-my profile-userId -nonread heavy
+-logout -non read heavy
+
+writes:-
+updating profile information- non write heavy
+new user -registration - non -write-heavy-depends if no camapign or advertisment going on
+password reset :- non -write-heavy-
+deactivate - non -write-heavy
+authenticate user - non -write-heavy
+
+
+
+when you are going to writeb and read 

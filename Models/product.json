@@ -1,0 +1,7 @@
+[{
+  "productId": "productId",
+  "name": "Laptop",
+  "description": "Apple Laptop with M1 chip",
+  "price": 50000,
+  "inStock": true
+} ]

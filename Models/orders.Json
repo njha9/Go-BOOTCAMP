@@ -1,0 +1,19 @@
+{
+  "orderId": "orderId",
+  "userId": "E1891",
+  "items": [
+    {
+      "productId": "productId",
+      "quantity": 10,
+      "price": 499
+    },
+    {
+      "productId": "P002",
+      "quantity": 1,
+      "price": 299
+    }
+  ],
+  "totalAmount": 1297,
+  "status": "in-transit",
+  "createdAt": "2025-10-28"
+}
