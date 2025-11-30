@@ -13,6 +13,57 @@ password reset :- non -write-heavy-
 deactivate - non -write-heavy
 authenticate user - non -write-heavy
 
+---------------------------------------------------------
+
+when order is geting called
 
 
-when you are going to writeb and read 
+read:-
+when try to get orders  - read-heavy
+Get orders by user      -read heavy
+Fetch order status      --   ready heavy
+
+write:-
+ 
+ Create new order -- write heavy
+ Update status    --- writes heavy
+ Cancel order --non -write heavy
+ Refund / return --non write heavy
+
+
+------------------------------------------------------------
+
+when product is getting called
+
+read:- 
+
+Product listing / search  -- read heavy
+Product detail view ---read heavy
+price change  ---- non read heavy - when recalculating prices --after adding/remove items from cart
+Product detail view -- read heavy
+Check stock of product  -----raed heavy
+recommended product     ----read heavy
+
+write:-
+
+when adds/updates a product --non-write-heavy
+when price update ---non-write heavy
+stoks  update suring sale time -- write heavy
+remove product.           -- non-writes heavy
+
+---------------------------------------------------------
+
+when to call cart
+
+read:-
+View/fetch  cart --based on userId ---read heavy
+validate cart -if price has been low/high --ready heavy 
+
+write
+
+Add item to cart ---write heavy
+Update item quantity --write heavy-when increase and decrease items
+Empty cart ---- non-write heavy
+ 
+
+
